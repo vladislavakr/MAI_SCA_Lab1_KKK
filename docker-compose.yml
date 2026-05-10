@@ -1,0 +1,11 @@
+services:
+  dependency-track:
+    image: dependencytrack/bundled:4.13.5
+    container_name: dependency-track
+    ports:
+      - "8080:8080"
+    volumes:
+      - dtrack-data:/data
+
+volumes:
+  dtrack-data:
